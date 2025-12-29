@@ -1,0 +1,16 @@
+/* TermsOfService.css */
+/* Reusing core legal styles from PrivacyPolicy.css or defined globally if refactored. 
+   For now, we import or duplicate the structure to ensure independence if needed, 
+   but ideally we should verify if we can just import the PrivacyPolicy.css or make a shared one.
+   For simplicity and speed in this request, we'll create a file that imports or duplicates the layout styles. */
+
+@import './PrivacyPolicy.css';
+
+.placeholder-notice {
+    background-color: #fff3cd;
+    border: 1px solid #ffeeba;
+    padding: 1rem;
+    border-radius: 4px;
+    margin-bottom: 2rem;
+    color: #856404;
+}

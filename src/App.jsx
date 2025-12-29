@@ -6,6 +6,8 @@ import About from './pages/About';
 import PhDServices from './pages/PhDServices';
 import Consulting from './pages/Consulting';
 import Contact from './pages/Contact';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 import './App.css';
 
 function App() {
@@ -18,6 +20,8 @@ function App() {
           <Route path="phd-services" element={<PhDServices />} />
           <Route path="consulting" element={<Consulting />} />
           <Route path="contact" element={<Contact />} />
+          <Route path="privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="terms-of-service" element={<TermsOfService />} />
         </Route>
       </Routes>
     </BrowserRouter>

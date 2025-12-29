@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 const Footer = () => {
@@ -8,7 +9,7 @@ const Footer = () => {
         <p>&copy; 2025 Guide Me PhD Ltd. Registered in England & Wales (Company No. 16154190).</p>
         <p>Gavin Farrell Consulting is a trading name of Guide Me PhD Ltd.</p>
         <p className="footer-links">
-          <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a>
+          <Link to="/privacy-policy">Privacy Policy</Link> | <Link to="/terms-of-service">Terms of Service</Link>
         </p>
       </div>
     </footer>
