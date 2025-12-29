@@ -21,8 +21,15 @@
 }
 
 .logo-image {
-  height: 40px; /* Adjust based on logo proportions */
-  width: auto;
+  height: 40px;
+  /* Adjust based on logo proportions */
+  width: 40px;
+  /* Force square aspect ratio for circle */
+  border-radius: 50%;
+  object-fit: cover;
+  /* Ensure content isn't distorted */
+  background-color: white;
+  /* Ensure white background inside circle */
 }
 
 .nav ul {
@@ -42,7 +49,8 @@
 }
 
 .nav a:hover {
-  color: #cccccc; /* Light grey on hover */
+  color: #cccccc;
+  /* Light grey on hover */
 }
 
 /* Mobile Menu Button */
@@ -120,7 +128,8 @@
   }
 
   .nav.nav-open {
-    max-height: 300px; /* Adjust as needed */
+    max-height: 300px;
+    /* Adjust as needed */
   }
 
   .nav ul {
