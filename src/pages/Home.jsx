@@ -45,6 +45,14 @@ const Home = () => {
               <span className="icon" role="img" aria-label="DNA Helix">🧬</span>
               <p>Bioinformatics</p>
             </div>
+            <div className="icon-box">
+              <span className="icon" role="img" aria-label="Computer">🖥️</span>
+              <p>Research Infrastructure</p>
+            </div>
+            <div className="icon-box">
+              <span className="icon" role="img" aria-label="Robot">🤖</span>
+              <p>AI</p>
+            </div>
           </div>
         </div>
       </section>
