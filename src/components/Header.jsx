@@ -1,22 +1,38 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import logo from '../assets/GuideMePhD_logo.svg';
 import './Header.css';
 
 const Header = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <header className="header">
-      <div className="logo">
-        <Link to="/">GuideMePhD</Link>
+      <div className="header-container">
+        <div className="logo">
+          <Link to="/">
+            <img src={logo} alt="GuideMePhD Logo" className="logo-image" />
+          </Link>
+        </div>
+        
+        <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Toggle Navigation">
+          <span className={`hamburger ${isMenuOpen ? 'open' : ''}`}></span>
+        </button>
+
+        <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
+          <ul>
+            <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
+            <li><Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link></li>
+            <li><Link to="/services" onClick={() => setIsMenuOpen(false)}>Services</Link></li>
+            <li><Link to="/consulting" onClick={() => setIsMenuOpen(false)}>Consulting</Link></li>
+            <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
+          </ul>
+        </nav>
       </div>
-      <nav className="nav">
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About</Link></li>
-          <li><Link to="/services">Services</Link></li>
-          <li><Link to="/consulting">Consulting</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
-      </nav>
     </header>
   );
 };
