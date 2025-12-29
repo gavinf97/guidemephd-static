@@ -21,15 +21,13 @@
 }
 
 .logo-image {
-  height: 40px;
-  /* Adjust based on logo proportions */
-  width: 40px;
-  /* Force square aspect ratio for circle */
-  border-radius: 50%;
-  object-fit: cover;
-  /* Ensure content isn't distorted */
-  background-color: white;
-  /* Ensure white background inside circle */
+  height: 80px;
+  /* Increased size as requested */
+  width: auto;
+  /* Maintain aspect ratio */
+  /* border-radius: 50%; has been removed to show full logo */
+  /* object-fit: cover; removed as not needed for auto width */
+  /* background-color: white; removed if not needed, or keep if transparent logo needs bg */
 }
 
 .nav ul {
