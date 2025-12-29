@@ -1,0 +1,131 @@
+/* PhDServices.css */
+.phd-services-page {
+  background-color: #f8f9fa;
+}
+
+.phd-hero {
+  background-color: #fff;
+  padding: 5rem 2rem;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+}
+
+.phd-hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+
+.phd-hero .hero-sub {
+  font-size: 1.2rem;
+  color: #555;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.services-list-section {
+  padding: 5rem 2rem;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .services-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.service-card {
+  background: white;
+  padding: 2.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease;
+  border: 1px solid #eaeaea;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.service-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.service-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+.service-card p {
+  color: #555;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.service-card .btn {
+  width: 100%;
+  text-align: center;
+}
+
+.btn-primary {
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.btn-primary:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+.btn-outline {
+  background-color: transparent;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.btn-outline:hover {
+  background-color: #f0f0f0;
+}
+
+/* Resources Section */
+.resources-section {
+  background-color: #fff;
+  /* Distinguish from main bg */
+  color: #000;
+  padding: 5rem 2rem;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+
+.resources-section h3 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.resources-section p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto 2.5rem;
+  color: #555;
+}
+
+.btn-secondary {
+  /* Inherit generic styling or specific overrides */
+  background-color: #000;
+  color: #fff;
+}

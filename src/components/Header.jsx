@@ -18,7 +18,7 @@ const Header = () => {
             <img src={logo} alt="GuideMePhD Logo" className="logo-image" />
           </Link>
         </div>
-        
+
         <button className="mobile-menu-btn" onClick={toggleMenu} aria-label="Toggle Navigation">
           <span className={`hamburger ${isMenuOpen ? 'open' : ''}`}></span>
         </button>
@@ -27,7 +27,7 @@ const Header = () => {
           <ul>
             <li><Link to="/" onClick={() => setIsMenuOpen(false)}>Home</Link></li>
             <li><Link to="/about" onClick={() => setIsMenuOpen(false)}>About</Link></li>
-            <li><Link to="/services" onClick={() => setIsMenuOpen(false)}>Services</Link></li>
+            <li><Link to="/phd-services" onClick={() => setIsMenuOpen(false)}>PhD Services</Link></li>
             <li><Link to="/consulting" onClick={() => setIsMenuOpen(false)}>Consulting</Link></li>
             <li><Link to="/contact" onClick={() => setIsMenuOpen(false)}>Contact</Link></li>
           </ul>
