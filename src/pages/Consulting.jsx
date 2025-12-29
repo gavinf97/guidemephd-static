@@ -1,5 +1,8 @@
 import React from 'react';
 import './Consulting.css';
+import gdiLogo from '../assets/gdi_eu_logo.png';
+import eoscLogo from '../assets/eosc.png';
+import elixirLogo from '../assets/elixir_logo.png';
 
 const Consulting = () => {
   return (
@@ -51,14 +54,23 @@ const Consulting = () => {
           <div className="project-highlights">
             <div className="project-item">
               <h3>European Genomic Data Infrastructure (GDI)</h3>
+              <a href="https://gdi.onemilliongenomes.eu/" target="_blank" rel="noopener noreferrer">
+                <img src={gdiLogo} alt="GDI Logo" className="project-logo" />
+              </a>
             </div>
             <div className="project-item">
               <h3>EOSC Family</h3>
               <p>EOSC-Life, EOSC Future, OSCARS, ENTRUST</p>
+              <a href="https://eosc.eu/" target="_blank" rel="noopener noreferrer">
+                <img src={eoscLogo} alt="EOSC Logo" className="project-logo eosc-logo" />
+              </a>
             </div>
             <div className="project-item">
               <h3>ELIXIR Family</h3>
               <p>CONVERGE, STEERS, Compute Platform</p>
+              <a href="https://elixir-europe.org/about-us/how-funded/eu-projects" target="_blank" rel="noopener noreferrer">
+                <img src={elixirLogo} alt="ELIXIR Logo" className="project-logo" />
+              </a>
             </div>
           </div>
 
