@@ -43,7 +43,8 @@ const Contact = () => {
           </form>
 
           <div className="contact-info">
-            <p><strong>Email:</strong> contact@guidemephd.com<br />contact@gavinfarrellconsulting.co.uk</p>
+            <p><strong>PhD Applications:</strong> <a href="mailto:contact@guidemephd.com">contact@guidemephd.com</a></p>
+            <p><strong>Consulting:</strong> <a href="mailto:contact@gavinfarrellconsulting.co.uk">contact@gavinfarrellconsulting.co.uk</a></p>
             <p><strong>Location:</strong> Cambridge, UK</p>
           </div>
         </div>
