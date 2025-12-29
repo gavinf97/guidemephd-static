@@ -1,5 +1,6 @@
 import React from 'react';
 import './About.css';
+import gavinfarrell from '../assets/gavinfarrell.jpeg';
 
 const About = () => {
   return (
@@ -17,9 +18,7 @@ const About = () => {
         <section className="founder-section">
           <h2>About Gavin Farrell</h2>
           <div className="founder-content">
-            <div className="founder-image-placeholder">
-              <span>Photo of Gavin Farrell</span>
-            </div>
+            <img src={gavinfarrell} alt="Gavin Farrell" className="founder-image" />
             <div className="founder-bio">
               <p>
                 Gavin Farrell holds a BSc in Biotechnology and an MSc in Biomedical Genomics from the National University of Ireland, Galway (NUIG). With a background in both wet-lab research and computational bioinformatics, Gavin has extensive experience in large-scale European and global research initiatives, including ELIXIR and EOSC.
