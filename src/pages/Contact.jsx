@@ -13,7 +13,11 @@ const Contact = () => {
 
       <section className="contact-form-section">
         <div className="container">
-          <form className="contact-form" onSubmit={(e) => e.preventDefault()}>
+          <form className="contact-form" action="https://formsubmit.co/contact@guidemephd.com" method="POST">
+            {/* FormSubmit Configuration */}
+            <input type="hidden" name="_captcha" value="true" />
+            <input type="hidden" name="_subject" value="New Enquiry via GuideMePhD Website" />
+            <input type="text" name="_honey" style={{ display: 'none' }} />
             <div className="form-group">
               <label htmlFor="name">Name</label>
               <input type="text" id="name" name="name" placeholder="First & Last Name" required />
