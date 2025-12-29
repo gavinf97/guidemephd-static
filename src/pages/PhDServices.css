@@ -79,6 +79,7 @@
 .service-card .btn {
   width: 100%;
   text-align: center;
+  box-sizing: border-box;
 }
 
 .btn-primary {
