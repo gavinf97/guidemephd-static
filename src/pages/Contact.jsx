@@ -43,7 +43,7 @@ const Contact = () => {
           </form>
 
           <div className="contact-info">
-            <p><strong>Email:</strong> contact@guidemephd.com</p>
+            <p><strong>Email:</strong> contact@guidemephd.com<br />contact@gavinfarrellconsulting.co.uk</p>
             <p><strong>Location:</strong> Cambridge, UK</p>
           </div>
         </div>
