@@ -19,33 +19,48 @@ const About = () => {
 
       <section className="founder-section">
         <div className="container">
-          <h2>Gavin Farrell</h2>
-          <div className="founder-content">
-            <img src={gavinfarrell} alt="Gavin Farrell" className="founder-image" />
-            <div className="founder-bio">
-              <p>
-                Gavin holds a BSc in Biotechnology and an MSc in Biomedical Genomics from the
-                National University of Ireland, Galway. With a background spanning wet-lab
-                research, computational bioinformatics, and large-scale European research
-                initiatives, he brings both technical and strategic expertise to every engagement.
-              </p>
-              <p>
-                He has contributed to flagship EC-funded programmes including ELIXIR, EOSC, and
-                the European Genomic Data Infrastructure (GDI), working across work package
-                leadership, community management, communications, and data infrastructure
-                strategy. His approach is collaborative and governance-minded, bridging the gap
-                between technical delivery and stakeholder alignment.
-              </p>
-              <p>
-                Gavin is currently completing a PhD in Computer Science, with research focused
-                on AI and machine learning best practices for life science applications. This
-                academic work directly informs and sharpens his practical consulting expertise.
-              </p>
-              <p>
-                Gavin Farrell Consulting is a trading name of Guide Me PhD Ltd, registered in
-                England &amp; Wales (Company No. 16154190).
-              </p>
+          <div className="founder-inner">
+
+            <div className="founder-profile">
+              <img src={gavinfarrell} alt="Gavin Farrell" className="founder-image" />
+              <div className="founder-identity">
+                <h2>Gavin Farrell</h2>
+                <p className="founder-title">Consultant &middot; Cambridge, UK</p>
+              </div>
             </div>
+
+            <p className="founder-lead">
+              Specialist in European research infrastructure, data management, and Open Science,
+              with hands-on experience across bioinformatics, EC project delivery, and community
+              management. Contributions span flagship programmes including ELIXIR, EOSC, and GDI,
+              working at the intersection of technical delivery and stakeholder strategy.
+            </p>
+
+            <div className="founder-credentials">
+              <div className="credential-item">
+                <span className="credential-label">BSc</span>
+                <span className="credential-value">Biotechnology, NUI Galway</span>
+              </div>
+              <div className="credential-item">
+                <span className="credential-label">MSc</span>
+                <span className="credential-value">Biomedical Genomics, NUI Galway</span>
+              </div>
+              <div className="credential-item">
+                <span className="credential-label">PhD</span>
+                <span className="credential-value">Computer Science (in progress)</span>
+              </div>
+            </div>
+
+            <div className="founder-research">
+              <span className="research-label">Current Research</span>
+              <p>AI and machine learning best practices for life science applications.</p>
+            </div>
+
+            <p className="founder-legal">
+              Gavin Farrell Consulting is a trading name of Guide Me PhD Ltd, registered in
+              England &amp; Wales (Company No. 16154190).
+            </p>
+
           </div>
         </div>
       </section>

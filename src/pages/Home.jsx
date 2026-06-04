@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import founderPhoto from '../assets/gavinfarrell.jpeg';
 import gdiLogo from '../assets/gdi_eu_logo.png';
 import eoscLogo from '../assets/eosc.png';
 import elixirLogo from '../assets/elixir_logo.png';
@@ -55,21 +54,13 @@ const Home = () => {
       </section>
 
       <section className="about-teaser">
-        <div className="container about-teaser-inner">
-          <div className="teaser-content">
-            <h2>Gavin Farrell Consulting</h2>
-            <p>
-              Based in Cambridge, UK, Gavin Farrell brings a rare combination of deep technical
-              expertise and stakeholder-facing experience to European research. With a background in
-              bioinformatics and genomics, Gavin has contributed to major EC-funded initiatives
-              including ELIXIR, EOSC, and GDI, leading work packages, building communities, and
-              driving data infrastructure strategy across borders.
-            </p>
-            <Link to="/about" className="btn btn-outline">About Gavin</Link>
-          </div>
-          <div className="teaser-photo">
-            <img src={founderPhoto} alt="Gavin Farrell" />
-          </div>
+        <div className="container">
+          <h2>Consulting</h2>
+          <p className="teaser-text">
+            Independent consulting for research institutions, project consortia, and European
+            initiatives. Based in Cambridge, UK.
+          </p>
+          <Link to="/about" className="btn btn-outline">Learn More</Link>
         </div>
       </section>
 

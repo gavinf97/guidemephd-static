@@ -26,60 +26,118 @@
   color: var(--color-on-dark-muted);
 }
 
-/* ─── Founder ────────────────────────────────────────────── */
+/* ─── Founder Section ────────────────────────────────────── */
 .founder-section {
   background-color: var(--color-white);
   padding: 5rem 2rem;
 }
 
-.founder-section h2 {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  color: var(--color-black);
-}
-
-.founder-content {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  align-items: center;
-  max-width: 900px;
+.founder-inner {
+  max-width: 720px;
   margin: 0 auto;
 }
 
-@media (min-width: 768px) {
-  .founder-content {
-    flex-direction: row;
-    align-items: flex-start;
-  }
+/* Profile: photo + name/location */
+.founder-profile {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+  margin-bottom: 2.25rem;
 }
 
 .founder-image {
-  width: 220px;
-  height: 220px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   object-fit: cover;
   flex-shrink: 0;
   border: 2px solid var(--color-border-light);
 }
 
-.founder-bio {
-  font-size: 1rem;
+.founder-identity h2 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-black);
+  margin: 0 0 0.2rem;
+}
+
+.founder-title {
+  font-size: 0.9rem;
+  color: var(--color-muted-text);
+  margin: 0;
+}
+
+/* Lead bio paragraph */
+.founder-lead {
+  font-size: 0.98rem;
   line-height: 1.8;
   color: var(--color-mid-text);
+  margin: 0 0 2rem;
 }
 
-.founder-bio p {
-  margin-bottom: 1.25rem;
+/* Credential chips */
+.founder-credentials {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.75rem;
 }
 
-.founder-bio p:last-child {
-  margin-bottom: 0;
-  font-size: 0.9rem;
+.credential-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.45rem;
+  padding: 0.55rem 0.9rem;
+  background-color: var(--color-bg-subtle);
+  border: 1px solid var(--color-border-faint);
+  border-radius: 4px;
+}
+
+.credential-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--color-teal);
+}
+
+.credential-value {
+  font-size: 0.85rem;
+  color: var(--color-body-text);
+}
+
+/* Research callout */
+.founder-research {
+  border-left: 3px solid var(--color-teal);
+  padding: 0.9rem 1.25rem;
+  background-color: var(--color-bg-subtle);
+  border-radius: 0 4px 4px 0;
+  margin-bottom: 2rem;
+}
+
+.research-label {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--color-teal);
+  margin-bottom: 0.3rem;
+}
+
+.founder-research p {
+  font-size: 0.92rem;
+  color: var(--color-body-text);
+  margin: 0;
+  line-height: 1.55;
+}
+
+/* Legal footnote */
+.founder-legal {
+  font-size: 0.8rem;
   color: var(--color-subtle-text);
+  margin: 0;
 }
 
 /* ─── Values ─────────────────────────────────────────────── */

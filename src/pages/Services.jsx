@@ -37,7 +37,7 @@ const servicesList = [
     Icon: BioIcon,
     title: 'Bioinformatics',
     description:
-      'End-to-end support for genomic and life science data workflows. Specialised in variant analysis, sequencing pipelines, federated data access, and integration with European data repositories.',
+      'End-to-end support for biomedical genomics and life science data workflows. Covering sequencing pipelines, federated data access, and integration with European research data infrastructure.',
   },
   {
     Icon: FundingIcon,

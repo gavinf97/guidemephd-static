@@ -87,12 +87,18 @@
 }
 
 .strip-grid {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   justify-content: center;
   gap: 0.5rem;
-  flex-wrap: wrap;
   max-width: 900px;
   margin: 0 auto;
+}
+
+@media (min-width: 540px) {
+  .strip-grid {
+    grid-template-columns: repeat(3, auto);
+  }
 }
 
 .strip-item {
@@ -121,55 +127,28 @@
 
 /* ─── About Teaser ───────────────────────────────────────── */
 .about-teaser {
-  padding: 5rem 2rem;
+  padding: 4rem 2rem;
   background-color: var(--color-bg-page);
+  border-top: 1px solid var(--color-border-light);
+  text-align: center;
 }
 
-.about-teaser-inner {
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  align-items: center;
-  max-width: 1000px;
-}
-
-@media (min-width: 768px) {
-  .about-teaser-inner {
-    flex-direction: row;
-    align-items: center;
-  }
-}
-
-.teaser-content {
-  flex: 1;
-}
-
-.teaser-content h2 {
-  font-size: 1.8rem;
+.about-teaser h2 {
+  font-size: 1.4rem;
   font-weight: 700;
-  letter-spacing: -0.02em;
-  margin-bottom: 1rem;
+  letter-spacing: -0.01em;
+  margin-bottom: 0.75rem;
   color: var(--color-black);
 }
 
-.teaser-content p {
-  font-size: 1rem;
-  color: var(--color-mid-text);
-  line-height: 1.75;
-  margin-bottom: 1.75rem;
-}
-
-.teaser-photo {
-  flex-shrink: 0;
-}
-
-.teaser-photo img {
-  width: 220px;
-  height: 220px;
-  border-radius: 50%;
-  object-fit: cover;
-  border: 2px solid var(--color-border-light);
-  display: block;
+.teaser-text {
+  font-size: 0.95rem;
+  color: var(--color-muted-text);
+  margin-bottom: 1.5rem;
+  max-width: 480px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.65;
 }
 
 /* ─── Track Record ───────────────────────────────────────── */
