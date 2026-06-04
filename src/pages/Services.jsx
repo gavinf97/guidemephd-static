@@ -1,7 +1,4 @@
 import { Link } from 'react-router-dom';
-import gdiLogo from '../assets/gdi_eu_logo.png';
-import eoscLogo from '../assets/eosc.png';
-import elixirLogo from '../assets/elixir_logo.png';
 import {
   DataIcon,
   BioIcon,
@@ -86,39 +83,16 @@ const servicesList = [
   },
 ];
 
-const projectsList = [
-  {
-    name: 'European Genomic Data Infrastructure (GDI)',
-    detail: 'Work package contributions to federated genomic data access across European member states.',
-    logo: gdiLogo,
-    logoClass: '',
-    href: 'https://gdi.onemilliongenomes.eu/',
-  },
-  {
-    name: 'EOSC Family',
-    detail: 'EOSC-Life · EOSC Future · OSCARS · ENTRUST — advisory, communications, and technical delivery.',
-    logo: eoscLogo,
-    logoClass: 'logo-wide',
-    href: 'https://eosc.eu/',
-  },
-  {
-    name: 'ELIXIR Family',
-    detail: 'CONVERGE · STEERS · Compute Platform — bioinformatics infrastructure and community engagement.',
-    logo: elixirLogo,
-    logoClass: '',
-    href: 'https://elixir-europe.org/about-us/how-funded/eu-projects',
-  },
-];
-
 const Services = () => {
   return (
     <div className="services-page">
+
       <section className="services-hero">
         <div className="container">
           <h1>Services</h1>
           <p className="services-hero-sub">
             Navigating the complexities of European research infrastructure, Open Science, and
-            data-driven collaboration — with both technical depth and strategic clarity.
+            data-driven collaboration, with both technical depth and strategic clarity.
           </p>
         </div>
       </section>
@@ -139,24 +113,14 @@ const Services = () => {
         </div>
       </section>
 
-      <section className="track-record-section">
+      <section className="services-projects-teaser">
         <div className="container">
           <h2>Proven Project Experience</h2>
-          <p className="track-intro">
-            Extensive experience delivering work packages for major European Commission-funded
-            initiatives across genomics, Open Science, and research infrastructure.
+          <p>
+            A track record spanning GDI, EOSC, and ELIXIR initiatives across the European
+            research ecosystem.
           </p>
-          <div className="project-list">
-            {projectsList.map(({ name, detail, logo, logoClass, href }) => (
-              <div key={name} className="project-item">
-                <a href={href} target="_blank" rel="noopener noreferrer">
-                  <img src={logo} alt={name} className={`project-logo ${logoClass}`} />
-                </a>
-                <h3>{name}</h3>
-                <p>{detail}</p>
-              </div>
-            ))}
-          </div>
+          <Link to="/projects" className="btn btn-outline">View Projects</Link>
         </div>
       </section>
 
@@ -167,6 +131,7 @@ const Services = () => {
           <Link to="/contact" className="btn btn-primary">Get in Touch</Link>
         </div>
       </section>
+
     </div>
   );
 };

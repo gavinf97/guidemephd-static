@@ -30,7 +30,8 @@ const Home = () => {
           <h1>Expert Consulting for European Research &amp; Open Science</h1>
           <p className="hero-sub">
             Strategic, technical, and communicative expertise across the European research
-            ecosystem — from FAIR data infrastructure to EC project applications.
+            ecosystem: FAIR data infrastructure, EC project applications, Open Science advisory,
+            and more.
           </p>
           <div className="hero-actions">
             <Link to="/services" className="btn btn-hero-primary">View Services</Link>
@@ -61,7 +62,7 @@ const Home = () => {
               Based in Cambridge, UK, Gavin Farrell brings a rare combination of deep technical
               expertise and stakeholder-facing experience to European research. With a background in
               bioinformatics and genomics, Gavin has contributed to major EC-funded initiatives
-              including ELIXIR, EOSC, and GDI — leading work packages, building communities, and
+              including ELIXIR, EOSC, and GDI, leading work packages, building communities, and
               driving data infrastructure strategy across borders.
             </p>
             <Link to="/about" className="btn btn-outline">About Gavin</Link>
@@ -90,7 +91,7 @@ const Home = () => {
               <img src={elixirLogo} alt="ELIXIR" />
             </a>
           </div>
-          <Link to="/services" className="track-link">See full service offering →</Link>
+          <Link to="/projects" className="track-link">View project history →</Link>
         </div>
       </section>
 

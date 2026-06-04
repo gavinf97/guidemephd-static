@@ -1,9 +1,9 @@
 /* Services.css */
 .services-page {
-  background-color: var(--color-bg-page);
+  width: 100%;
 }
 
-/* Hero */
+/* ─── Hero ───────────────────────────────────────────────── */
 .services-hero {
   background-color: var(--color-near-black);
   color: var(--color-on-dark);
@@ -26,7 +26,7 @@
   line-height: 1.7;
 }
 
-/* Services grid */
+/* ─── Services grid ──────────────────────────────────────── */
 .services-grid-section {
   padding: 5rem 2rem;
   background-color: var(--color-bg-subtle);
@@ -88,79 +88,32 @@
   margin: 0;
 }
 
-/* Track record */
-.track-record-section {
-  padding: 5rem 2rem;
+/* ─── Projects teaser ────────────────────────────────────── */
+.services-projects-teaser {
+  padding: 4rem 2rem;
   background-color: var(--color-white);
+  border-top: 1px solid var(--color-border-light);
   text-align: center;
 }
 
-.track-record-section h2 {
-  font-size: 2rem;
+.services-projects-teaser h2 {
+  font-size: 1.6rem;
   font-weight: 700;
-  margin-bottom: 1rem;
-  color: var(--color-black);
   letter-spacing: -0.02em;
-}
-
-.track-intro {
-  font-size: 1.1rem;
-  color: var(--color-muted-text);
-  max-width: 700px;
-  margin: 0 auto 3.5rem;
-  line-height: 1.7;
-}
-
-.project-list {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.project-item {
-  flex: 1;
-  min-width: 270px;
-  max-width: 340px;
-  padding: 2rem 1.5rem;
-  background-color: var(--color-bg-subtle);
-  border-radius: 6px;
-  text-align: left;
-}
-
-.project-logo {
-  display: block;
-  max-width: 140px;
-  height: auto;
-  margin-bottom: 1.25rem;
-  transition: opacity 0.2s ease;
-}
-
-.project-logo.logo-wide {
-  max-width: 210px;
-}
-
-.project-logo:hover {
-  opacity: 0.8;
-}
-
-.project-item h3 {
-  font-size: 0.95rem;
-  font-weight: 600;
+  margin-bottom: 0.75rem;
   color: var(--color-black);
-  margin-bottom: 0.5rem;
 }
 
-.project-item p {
-  font-size: 0.88rem;
-  color: var(--color-subtle-text);
-  line-height: 1.6;
-  margin: 0;
+.services-projects-teaser p {
+  font-size: 1rem;
+  color: var(--color-muted-text);
+  margin-bottom: 1.75rem;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-/* CTA */
+/* ─── CTA ────────────────────────────────────────────────── */
 .services-cta {
   padding: 5rem 2rem;
   background-color: var(--color-near-black);

@@ -4,18 +4,21 @@ import gavinfarrell from '../assets/gavinfarrell.jpeg';
 const About = () => {
   return (
     <div className="about-page">
-      <div className="container">
-        <section className="about-section">
+
+      <section className="about-hero">
+        <div className="container">
           <h1>About</h1>
           <p className="about-intro">
             Gavin Farrell Consulting provides specialist advisory services across European
-            research infrastructure, data management, and Open Science. Based in Cambridge, UK,
-            the practice combines deep technical knowledge with practical delivery experience
-            across EC-funded research programmes.
+            research infrastructure, data management, and Open Science. The practice combines
+            deep technical knowledge with practical delivery experience across EC-funded
+            research programmes.
           </p>
-        </section>
+        </div>
+      </section>
 
-        <section className="founder-section">
+      <section className="founder-section">
+        <div className="container">
           <h2>Gavin Farrell</h2>
           <div className="founder-content">
             <img src={gavinfarrell} alt="Gavin Farrell" className="founder-image" />
@@ -30,8 +33,13 @@ const About = () => {
                 He has contributed to flagship EC-funded programmes including ELIXIR, EOSC, and
                 the European Genomic Data Infrastructure (GDI), working across work package
                 leadership, community management, communications, and data infrastructure
-                strategy. His approach is collaborative and governance-minded — bridging the gap
+                strategy. His approach is collaborative and governance-minded, bridging the gap
                 between technical delivery and stakeholder alignment.
+              </p>
+              <p>
+                Gavin is currently completing a PhD in Computer Science, with research focused
+                on AI and machine learning best practices for life science applications. This
+                academic work directly informs and sharpens his practical consulting expertise.
               </p>
               <p>
                 Gavin Farrell Consulting is a trading name of Guide Me PhD Ltd, registered in
@@ -39,9 +47,11 @@ const About = () => {
               </p>
             </div>
           </div>
-        </section>
+        </div>
+      </section>
 
-        <section className="values-section">
+      <section className="values-section">
+        <div className="container">
           <h2>Approach &amp; Values</h2>
           <div className="values-grid">
             <div className="value-card">
@@ -66,8 +76,9 @@ const About = () => {
               </p>
             </div>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
+
     </div>
   );
 };
