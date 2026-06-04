@@ -1,24 +1,24 @@
 /* PhDServices.css */
 .phd-services-page {
-  background-color: #f8f9fa;
+  background-color: var(--color-bg-subtle);
 }
 
 .phd-hero {
-  background-color: #fff;
+  background-color: var(--color-white);
   padding: 5rem 2rem;
   text-align: center;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid var(--color-border-light);
 }
 
 .phd-hero h1 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
-  color: #000;
+  color: var(--color-black);
 }
 
 .phd-hero .hero-sub {
   font-size: 1.2rem;
-  color: #555;
+  color: var(--color-muted-text);
   max-width: 700px;
   margin: 0 auto;
 }
@@ -42,12 +42,12 @@
 }
 
 .service-card {
-  background: white;
+  background: var(--color-white);
   padding: 2.5rem;
   border-radius: 8px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
   transition: transform 0.3s ease;
-  border: 1px solid #eaeaea;
+  border: 1px solid var(--color-border-faint);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -66,11 +66,11 @@
 .service-card h3 {
   font-size: 1.5rem;
   margin-bottom: 1rem;
-  color: #000;
+  color: var(--color-black);
 }
 
 .service-card p {
-  color: #555;
+  color: var(--color-muted-text);
   margin-bottom: 2rem;
   line-height: 1.6;
   flex-grow: 1;
@@ -82,35 +82,13 @@
   box-sizing: border-box;
 }
 
-.btn-primary {
-  background-color: #000;
-  color: #fff;
-  border: 1px solid #000;
-}
-
-.btn-primary:hover {
-  background-color: #333;
-  color: #fff;
-}
-
-.btn-outline {
-  background-color: transparent;
-  color: #000;
-  border: 1px solid #000;
-}
-
-.btn-outline:hover {
-  background-color: #f0f0f0;
-}
-
 /* Resources Section */
 .resources-section {
-  background-color: #fff;
-  /* Distinguish from main bg */
-  color: #000;
+  background-color: var(--color-white);
+  color: var(--color-black);
   padding: 5rem 2rem;
   text-align: center;
-  border-top: 1px solid #eee;
+  border-top: 1px solid var(--color-border-light);
 }
 
 .resources-section h3 {
@@ -122,11 +100,5 @@
   font-size: 1.1rem;
   max-width: 700px;
   margin: 0 auto 2.5rem;
-  color: #555;
-}
-
-.btn-secondary {
-  /* Inherit generic styling or specific overrides */
-  background-color: #000;
-  color: #fff;
+  color: var(--color-muted-text);
 }

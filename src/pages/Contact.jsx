@@ -17,7 +17,7 @@ const Contact = () => {
             {/* FormSubmit Configuration */}
             <input type="hidden" name="_captcha" value="true" />
             <input type="hidden" name="_subject" value="New Enquiry via GuideMePhD Website" />
-            <input type="text" name="_honey" style={{ display: 'none' }} />
+            <input type="text" name="_honey" className="honeypot-field" />
             <div className="form-group">
               <label htmlFor="name">Name</label>
               <input type="text" id="name" name="name" placeholder="First & Last Name" required />
