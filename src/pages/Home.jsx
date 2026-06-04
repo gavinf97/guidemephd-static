@@ -41,7 +41,7 @@ const Home = () => {
 
       <section className="expertise-strip">
         <div className="container">
-          <p className="strip-label">Areas of expertise</p>
+          <h2 className="strip-title">Areas of expertise</h2>
           <div className="strip-grid">
             {expertiseAreas.map(({ Icon, label }) => (
               <div key={label} className="strip-item">

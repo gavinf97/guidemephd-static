@@ -76,14 +76,13 @@
   border-bottom: 1px solid var(--color-border-light);
 }
 
-.strip-label {
-  font-size: 0.75rem;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  color: var(--color-subtle-text);
+.strip-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color: var(--color-black);
   text-align: center;
   margin-bottom: 1.5rem;
-  font-weight: 600;
 }
 
 .strip-grid {
