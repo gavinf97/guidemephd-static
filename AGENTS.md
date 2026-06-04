@@ -62,6 +62,7 @@ Node 20+ required. Use `nvm` if needed.
     ├── components/
     │   ├── Header.jsx + Header.css   top nav + mobile hamburger menu
     │   ├── Footer.jsx + Footer.css   copyright + legal links
+    │   ├── Icons.jsx                 SVG icon library (named exports: DataIcon, BioIcon, etc.)
     │   └── ScrollToTop.jsx           scrolls window to top on every route change
     │
     ├── layouts/
@@ -70,8 +71,7 @@ Node 20+ required. Use `nvm` if needed.
     └── pages/
         ├── Home.jsx + Home.css
         ├── About.jsx + About.css
-        ├── PhDServices.jsx + PhDServices.css
-        ├── Consulting.jsx + Consulting.css
+        ├── Services.jsx + Services.css   (main consulting services page)
         ├── Contact.jsx + Contact.css
         ├── PrivacyPolicy.jsx + PrivacyPolicy.css
         └── TermsOfService.jsx + TermsOfService.css
@@ -87,8 +87,7 @@ React Router v7 with `BrowserRouter`. All pages nest under `<MainLayout>` (which
 ```
 /                   → Home
 /about              → About
-/phd-services       → PhDServices
-/consulting         → Consulting
+/services           → Services (main consulting services page)
 /contact            → Contact
 /privacy-policy     → PrivacyPolicy
 /terms-of-service   → TermsOfService
@@ -105,8 +104,9 @@ React Router v7 with `BrowserRouter`. All pages nest under `<MainLayout>` (which
    ```jsx
    <Route path="new-path" element={<NewPage />} />
    ```
-3. If it needs top-nav visibility, add a `<Link to="/new-path">` in `src/components/Header.jsx`.
+3. If it needs top-nav visibility, add a `<Link to="/new-path">` in `src/components/Header.jsx` nav `<ul>`.
 4. Use `var(--color-*)` tokens from `index.css` for all colours — no new hardcoded hex values.
+5. Use icon components from `src/components/Icons.jsx` for any service-area icons. Add new icons to that file if needed.
 
 ---
 

@@ -1,4 +1,3 @@
-import React from 'react';
 import './About.css';
 import gavinfarrell from '../assets/gavinfarrell.jpeg';
 
@@ -6,45 +5,65 @@ const About = () => {
   return (
     <div className="about-page">
       <div className="container">
-        {/* Who We Are */}
         <section className="about-section">
-          <h1>About Guide Me PhD Ltd</h1>
+          <h1>About</h1>
           <p className="about-intro">
-            Founded with the vision of simplifying the complex journey of academic research, we combine expert guidance with digital innovation. Based in Cambridge, UK—one of the world's foremost academic hubs—we are uniquely positioned to draw from a rich heritage of research excellence to support your goals.
+            Gavin Farrell Consulting provides specialist advisory services across European
+            research infrastructure, data management, and Open Science. Based in Cambridge, UK,
+            the practice combines deep technical knowledge with practical delivery experience
+            across EC-funded research programmes.
           </p>
         </section>
 
-        {/* The Founder */}
         <section className="founder-section">
-          <h2>About Gavin Farrell</h2>
+          <h2>Gavin Farrell</h2>
           <div className="founder-content">
             <img src={gavinfarrell} alt="Gavin Farrell" className="founder-image" />
             <div className="founder-bio">
               <p>
-                Gavin Farrell holds a BSc in Biotechnology and an MSc in Biomedical Genomics from the National University of Ireland, Galway (NUIG). With a background in both wet-lab research and computational bioinformatics, Gavin has extensive experience in large-scale European and global research initiatives, including ELIXIR and EOSC.
+                Gavin holds a BSc in Biotechnology and an MSc in Biomedical Genomics from the
+                National University of Ireland, Galway. With a background spanning wet-lab
+                research, computational bioinformatics, and large-scale European research
+                initiatives, he brings both technical and strategic expertise to every engagement.
               </p>
-              <p className="founder-note">
-                <strong>Note:</strong> Gavin Farrell Consulting operates as a specialist trading name under Guide Me PhD Ltd.
+              <p>
+                He has contributed to flagship EC-funded programmes including ELIXIR, EOSC, and
+                the European Genomic Data Infrastructure (GDI), working across work package
+                leadership, community management, communications, and data infrastructure
+                strategy. His approach is collaborative and governance-minded — bridging the gap
+                between technical delivery and stakeholder alignment.
+              </p>
+              <p>
+                Gavin Farrell Consulting is a trading name of Guide Me PhD Ltd, registered in
+                England &amp; Wales (Company No. 16154190).
               </p>
             </div>
           </div>
         </section>
 
-        {/* Our Values */}
         <section className="values-section">
-          <h2>Our Values</h2>
+          <h2>Approach &amp; Values</h2>
           <div className="values-grid">
             <div className="value-card">
-              <h3>Ethical Support</h3>
-              <p>We are committed to offering expert, ethical, and tailored services.</p>
-            </div>
-            <div className="value-card">
               <h3>Open Science</h3>
-              <p>We believe in making research transparent, accessible, and collaborative.</p>
+              <p>
+                A genuine commitment to FAIR data principles, open-access practices, and the
+                values underpinning the European Open Science Cloud.
+              </p>
             </div>
             <div className="value-card">
-              <h3>Excellence</h3>
-              <p>Leveraging deep academic experience to maximise success rates.</p>
+              <h3>Technical Rigour</h3>
+              <p>
+                Deep hands-on experience with bioinformatics workflows, data infrastructure
+                architecture, and the technical realities of cross-border research.
+              </p>
+            </div>
+            <div className="value-card">
+              <h3>Collaborative Practice</h3>
+              <p>
+                Effective consulting built on clear communication, stakeholder trust, and
+                long-term partnerships within the European research community.
+              </p>
             </div>
           </div>
         </section>

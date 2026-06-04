@@ -1,79 +1,104 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
+import founderPhoto from '../assets/gavinfarrell.jpeg';
+import gdiLogo from '../assets/gdi_eu_logo.png';
+import eoscLogo from '../assets/eosc.png';
+import elixirLogo from '../assets/elixir_logo.png';
+import {
+  DataIcon,
+  BioIcon,
+  OpenScienceIcon,
+  FundingIcon,
+  CommunityIcon,
+  CommsIcon,
+} from '../components/Icons';
 import './Home.css';
+
+const expertiseAreas = [
+  { Icon: DataIcon, label: 'Data Infrastructure' },
+  { Icon: BioIcon, label: 'Bioinformatics' },
+  { Icon: OpenScienceIcon, label: 'Open Science' },
+  { Icon: FundingIcon, label: 'EC Projects' },
+  { Icon: CommunityIcon, label: 'Community' },
+  { Icon: CommsIcon, label: 'Communications' },
+];
 
 const Home = () => {
   return (
     <div className="home">
-      {/* Hero Section */}
-      <section className="hero-section">
-        <div className="hero-content">
-          <h1>Empowering Your Academic Journey & Research Infrastructure</h1>
-          <p className="hero-sub">From securing your dream PhD position to navigating complex open science landscapes. Expert guidance based in Cambridge, UK.</p>
-          <div className="hero-buttons">
-            <Link to="/phd-services" className="btn btn-primary">Explore PhD Services</Link>
-            <Link to="/consulting" className="btn btn-secondary">Discover Technical Consulting</Link>
-          </div>
-        </div>
-        <div className="hero-visuals">
-          <div className="visual-half academic-visual">
-            <div className="visual-overlay">
-              <span>Academic Excellence</span>
-            </div>
-          </div>
-          <div className="visual-half tech-visual">
-            <div className="visual-overlay">
-              <span>Research Infrastructure</span>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Mission Section */}
-      <section className="mission-section">
-        <div className="container">
-          <h2>Expertise You Can Trust</h2>
-          <p className="lead-text">
-            Guide Me PhD Ltd is dedicated to empowering aspiring researchers to fulfil their ambitions. We simplify the daunting process of applying for PhD programmes while simultaneously offering high-level consultancy for research institutions.
+      <section className="hero">
+        <div className="hero-inner container">
+          <h1>Expert Consulting for European Research &amp; Open Science</h1>
+          <p className="hero-sub">
+            Strategic, technical, and communicative expertise across the European research
+            ecosystem — from FAIR data infrastructure to EC project applications.
           </p>
-          <div className="mission-icons">
-            <div className="icon-box">
-              <span className="icon" role="img" aria-label="Graduation Cap">🎓</span>
-              <p>PhD Success</p>
-            </div>
-            <div className="icon-box">
-              <span className="icon" role="img" aria-label="DNA Helix">🧬</span>
-              <p>Bioinformatics</p>
-            </div>
-            <div className="icon-box">
-              <span className="icon" role="img" aria-label="Computer">🖥️</span>
-              <p>Research Infrastructure</p>
-            </div>
-            <div className="icon-box">
-              <span className="icon" role="img" aria-label="Robot">🤖</span>
-              <p>AI</p>
-            </div>
+          <div className="hero-actions">
+            <Link to="/services" className="btn btn-hero-primary">View Services</Link>
+            <Link to="/contact" className="btn btn-hero-outline">Get in Touch</Link>
           </div>
         </div>
       </section>
 
-      {/* What We Offer Section */}
-      <section className="offer-section">
+      <section className="expertise-strip">
         <div className="container">
-          <div className="offer-grid">
-            <div className="offer-card applicant-card">
-              <h3>For Applicants</h3>
-              <h4>PhD Application Support</h4>
-              <p>Comprehensive resources to help you stand out in a competitive pool of candidates. We provide tailored guidance on proposals, CVs, and interviews.</p>
-              <Link to="/phd-services" className="link-arrow">Read More in Services →</Link>
-            </div>
-            <div className="offer-card institution-card">
-              <h3>For Institutions</h3>
-              <h4>Gavin Farrell Consulting</h4>
-              <p>Specialised advisory services in open science, bioinformatics, and life science data infrastructure.</p>
-              <Link to="/consulting" className="link-arrow">Read More in Consulting →</Link>
-            </div>
+          <p className="strip-label">Areas of expertise</p>
+          <div className="strip-grid">
+            {expertiseAreas.map(({ Icon, label }) => (
+              <div key={label} className="strip-item">
+                <Icon size={24} />
+                <span>{label}</span>
+              </div>
+            ))}
           </div>
+        </div>
+      </section>
+
+      <section className="about-teaser">
+        <div className="container about-teaser-inner">
+          <div className="teaser-content">
+            <h2>Gavin Farrell Consulting</h2>
+            <p>
+              Based in Cambridge, UK, Gavin Farrell brings a rare combination of deep technical
+              expertise and stakeholder-facing experience to European research. With a background in
+              bioinformatics and genomics, Gavin has contributed to major EC-funded initiatives
+              including ELIXIR, EOSC, and GDI — leading work packages, building communities, and
+              driving data infrastructure strategy across borders.
+            </p>
+            <Link to="/about" className="btn btn-outline">About Gavin</Link>
+          </div>
+          <div className="teaser-photo">
+            <img src={founderPhoto} alt="Gavin Farrell" />
+          </div>
+        </div>
+      </section>
+
+      <section className="track-record">
+        <div className="container">
+          <h2>Proven Project Experience</h2>
+          <p className="track-sub">
+            A consistent track record delivering across some of Europe's most ambitious
+            research infrastructure programmes.
+          </p>
+          <div className="logos-row">
+            <a href="https://gdi.onemilliongenomes.eu/" target="_blank" rel="noopener noreferrer" className="logo-link">
+              <img src={gdiLogo} alt="European Genomic Data Infrastructure" />
+            </a>
+            <a href="https://eosc.eu/" target="_blank" rel="noopener noreferrer" className="logo-link">
+              <img src={eoscLogo} alt="EOSC" className="logo-wide" />
+            </a>
+            <a href="https://elixir-europe.org/about-us/how-funded/eu-projects" target="_blank" rel="noopener noreferrer" className="logo-link">
+              <img src={elixirLogo} alt="ELIXIR" />
+            </a>
+          </div>
+          <Link to="/services" className="track-link">See full service offering →</Link>
+        </div>
+      </section>
+
+      <section className="home-cta">
+        <div className="container">
+          <h2>Ready to collaborate?</h2>
+          <p>Let's discuss how expert consulting can advance your project or institution.</p>
+          <Link to="/contact" className="btn btn-hero-primary">Get in Touch</Link>
         </div>
       </section>
     </div>

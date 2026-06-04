@@ -27,7 +27,7 @@ export default defineConfig([
        * ESLint cannot track JSX element references (e.g. <BrowserRouter>) as
        * variable usage. PascalCase imports used as JSX elements would be falsely
        * flagged as unused. Install eslint-plugin-react to remove this workaround. */
-      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]', args: 'after-used' }],
+      'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]', argsIgnorePattern: '^[A-Z_]', args: 'after-used' }],
     },
   },
 ])

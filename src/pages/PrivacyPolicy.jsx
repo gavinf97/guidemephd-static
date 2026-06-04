@@ -36,7 +36,7 @@ const PrivacyPolicy = () => {
                             <h2>1. Introduction & Who We Are</h2>
                             <ul>
                                 <li>Guide Me PhD LTD (“we,” “us,” “our”) is committed to protecting and respecting your privacy.</li>
-                                <li>This Privacy Policy explains how we collect, use, store, share, and protect your personal data when you use our website (www.guidemephd.com, the “Site”) and our Services (Digital Products and Review Services).</li>
+                                <li>This Privacy Policy explains how we collect, use, store, share, and protect your personal data when you use our website (www.guidemephd.com, the “Site”) and our consulting services.</li>
                                 <li>We comply with the UK General Data Protection Regulation (UK GDPR) and the Data Protection Act 2018.</li>
                                 <li>For the purpose of data protection law, the Data Controller is Guide Me Phd LTD of Cambridge, UK.</li>
                                 <li>Our contact person for data protection matters is Gavin Farrell – The Data Protection Lead who can be reached at contact@guidemephd.com.</li>
@@ -49,7 +49,7 @@ const PrivacyPolicy = () => {
                             <ul>
                                 <li><strong>Identity & Contact Data:</strong> Name, email address, username (if applicable).</li>
                                 <li><strong>Transactional Data:</strong> Details about products/services purchased, payment history (processed via third parties, we don’t store full card details). Billing address.</li>
-                                <li><strong>Application Review Data (Sensitive Data):</strong> Documents you submit for review (e.g., personal statements, CVs, research proposals). This may include special category data if you choose to include it (e.g., health, ethnicity – only process if strictly necessary for the service and with explicit consent).</li>
+                                <li><strong>Enquiry &amp; Project Data:</strong> Information you provide when contacting us or engaging our services (e.g., project descriptions, organisational context). This may include special category data only if strictly necessary and with explicit consent.</li>
                                 <li><strong>Technical Data:</strong> IP address, browser type/version, time zone setting, operating system, device information.</li>
                                 <li><strong>Usage Data:</strong> How you use our website (pages visited, time spent, clicks).</li>
                                 <li><strong>Marketing & Communications Data:</strong> Your preferences in receiving marketing from us (requires opt-in consent) and your communication history with us.</li>
