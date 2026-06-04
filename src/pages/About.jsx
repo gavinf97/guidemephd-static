@@ -47,7 +47,7 @@ const About = () => {
               </div>
               <div className="credential-item">
                 <span className="credential-label">PhD</span>
-                <span className="credential-value">Computer Science (in progress)</span>
+                <span className="credential-value">Computer Science, University of Padova (in progress)</span>
               </div>
             </div>
 
